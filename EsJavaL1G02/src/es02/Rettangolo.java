@@ -2,27 +2,26 @@ package es02;
 
 public class Rettangolo {
 	
+	//lista attributi
 	
-	// Lista attributi
 	int altezza;
 	int larghezza;
-
-	//Costruttore
+	
+	//lista costruttori
 	
 	public Rettangolo(int altezza, int larghezza) {
 		this.altezza = altezza;
 		this.larghezza = larghezza;
 	}
 	
-	//Metodi
+	//lista metodi
 	
-	public int perimetro() {
-		return ((altezza+larghezza)*2);
+	int area() {
+		return altezza*larghezza;
 	}
 	
-	public int area() {
-		return (altezza*larghezza); 
+	int perimetro() {
+		return (altezza*larghezza)*2;
 	}
-	
-	
+
 }
